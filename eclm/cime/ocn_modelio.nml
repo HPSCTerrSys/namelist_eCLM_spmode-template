@@ -1,0 +1,13 @@
+&modelio
+ diri = 'UNUSED'
+ diro = "DUMMY/logs"
+ logfile = "DUMMY.comp_ocn.log"
+/
+&pio_inparm
+ pio_netcdf_format = '64bit_offset'
+ pio_numiotasks = -99
+ pio_rearranger = 1
+ pio_root = 1
+ pio_stride = 1
+ pio_typename = 'netcdf'
+/
