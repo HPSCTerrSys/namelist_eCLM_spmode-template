@@ -4,11 +4,11 @@
  co2_type = 'constant'
  create_crop_landunit = .true.
  dtime = __clm_tsp__
- fatmlndfrc = '__geo_dir_clm__/domain.lnd.EUR-0275_EUR-0275.230912.nc'
+ fatmlndfrc = '__geo_dir_clm__/__domainfile_clm__'
  finidat = '__fini_clm__'
  fsnowaging = '__geo_dir_clm__/snicardata/snicar_drdt_bst_fit_60_c070416.nc'
  fsnowoptics = '__geo_dir_clm__/snicardata/snicar_optics_5bnd_c090915.nc'
- fsurdat = '__geo_dir_clm__/surfdata_EUR-0275_hist_16pfts_Irrig_CMIP6_simyr2000_c230216_GLC2000.nc'
+ fsurdat = '__geo_dir_clm__/__surffile_clm__'
  glc_do_dynglacier = .false.
  glc_snow_persistence_max_days = 0
  h2osno_max = 10000.0
@@ -200,5 +200,5 @@
 !#--------------------------------------------------------------------------------------------------------------------------
 !# lnd_in:: Comment:
 !# This namelist is based on the following configuration:
-!#     /CLM build-namelist -cimeroot /.. -infile namelist -csmdata inputdata -inputdata clm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=19900101 /  -use_case 2000_control -res UNSET -clm_usr_name UNSET -clm_start_type default -envxml_dir CLM5EUR-0275_SP_ERA5_GLC2000_newmask_prodrun -l_ncpl 24 -lnd_frac domain.lnd.EUR-0275_EUR-0275.230912.nc -glc_nec 10 -co2_ppmv 367.0 -co2_type constant -config CLM5EUR-0275_SP_ERA5_GLC2000_newmask_prodrun/Buildconf/clmconf/config_cache.xml -bgc sp -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_CRUv7
+!#     /CLM build-namelist -cimeroot /.. -infile namelist -csmdata inputdata -inputdata clm.input_data_list -ignore_ic_year -namelist &clm_inparm  start_ymd=19900101 /  -use_case 2000_control -res UNSET -clm_usr_name UNSET -clm_start_type default -envxml_dir clm_expdir -l_ncpl 24 -lnd_frac domain.lnd.nc -glc_nec 10 -co2_ppmv 367.0 -co2_type constant -config clm/Buildconf/clmconf/config_cache.xml -bgc sp -clm_accelerated_spinup off -lnd_tuning_mode clm5_0_CRUv7
 !#--------------------------------------------------------------------------------------------------------------------------

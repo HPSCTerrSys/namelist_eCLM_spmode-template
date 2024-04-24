@@ -10,7 +10,7 @@
 /
 &shr_strdata_nml
   datamode = "CLMNCEP"
-  domainfile = "__geo_dir_clm__/domain.lnd.EUR-0275_EUR-0275.230912.nc"
+  domainfile = "__geo_dir_clm__/__domainfile_clm__"
   dtlimit = 5.1, 5.1, 5.1, 5.1, 5.1
   fillalgo = "nn", "nn", "nn", "nn", "nn"
   fillmask = "nomask", "nomask", "nomask", "nomask", "nomask"
