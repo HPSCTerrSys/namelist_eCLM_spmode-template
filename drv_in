@@ -118,7 +118,7 @@
   budget_ltend = 0
   budget_month = 1
   case_desc = "UNSET"
-  case_name = "eCLM_EUR-0275_SP_GLC2000"
+  case_name = "__clm_casename__"
   cime_model = "cesm"
   coldair_outbreak_mod = .true.
   cpl_decomp = 0
